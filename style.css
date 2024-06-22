@@ -1,0 +1,20 @@
+:root {
+  --info: #007bff;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --success: #28a745;
+  --success-message-bgcolor: #d3ffd3;
+  --success-message-txt-color: #33ba33;
+  --danger-message-bgcolor: #ffd3d3;
+  --danger-message-txt-color: #c24b5f;
+}
+
+/* sil n'y a pas de "box-sizing: border-box;" l élément depassera de l'écran.*/
+*::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
