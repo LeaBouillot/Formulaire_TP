@@ -11,67 +11,72 @@
       <form>
         <div>
           <label for="pseudo">Pseudo :</label>
-          <input type="text" />
+          <input type="text" id="name" name="user_name" />
         </div>
 
         <div>
           <label for="email">Email :</label>
-          <input type="email" />
+          <input type="email" id="email" name="user_email" />
         </div>
 
         <div>
-          <label for="">Mot de passe :</label>
-          <input type="text" />
+          <label for="md_passe">Mot de passe :</label>
+          <input type="text" id="md_passe" />
         </div>
 
         <div>
-          <label for="">Confirmez le mot de passe :</label>
-          <input type="text" />
+          <label for="cfm_md_passe">Confirmez le mot de passe :</label>
+          <input type="text" id="cfm_md_passe" />
         </div>
 
         <div>
-          <label for="">Profil :</label>
-          <select name="" id="">
-            <option value="">
+          <label for="profil">Profil :</label>
+          <select name="profil" id="profil">
+            <option value="secection-profil">
               Sélectionnez votre profil qui est le plus proche du votre
             </option>
-            <option value="">Développeur Web</option>
-            <option value="">Designer Web</option>
-            <option value="">Intégrateur Web</option>
-            <option value="">Chef de Projet</option>
-            <option value="">Consultant Web</option>
-            <option value="">Administrateur Réseau</option>
-            <option value="">Webmaster</option>
+            <option value="developpeur_web">Développeur Web</option>
+            <option value="designer_web">Designer Web</option>
+            <option value="integrateur_web">Intégrateur Web</option>
+            <option value="chef_projet">Chef de Projet</option>
+            <option value="consultant_web">Consultant Web</option>
+            <option value="administrateur_reseau">Administrateur Réseau</option>
+            <option value="webmsater">Webmaster</option>
           </select>
         </div>
 
         <div>
-          <label for="">Langage web le mieux maîtrisé :</label>
+          <label for="langage_web">Langage web le mieux maîtrisé :</label>
           <div>
-            <input type="text" />
-            <label for="">HTML</label>
+            <input type="radio" id="html" name="langage_web" value="html" />
+            <label for="html">HTML</label>
           </div>
           <div>
-            <input type="text" />
-            <label for="">CSS</label>
+            <input type="radio" id="css" name="langage_web" value="css" />
+            <label for="css">CSS</label>
           </div>
           <div>
-            <input type="text" />
-            <label for="">javascript</label>
+            <input
+              type="radio"
+              id="javascript"
+              name="langage_web"
+              value="javascript"
+            />
+            <label for="javascript">javascript</label>
           </div>
           <div>
-            <input type="text" />
-            <label for="">PHP</label>
+            <input type="radio" id="php" name="langage_web" value="php" />
+            <label for="php">PHP</label>
           </div>
         </div>
 
         <div>
-          <input type="text" />
-          <label for="">J'accepte les conditions</label>
+          <input type="checkbox" id="condition" name="condition" />
+          <label for="condition">J'accepte les conditions</label>
         </div>
 
         <div>
-          <button>Soumettre</button>
+          <button type="submit" value="envoyer">Envoyer</button>
         </div>
       </form>
     </div>
